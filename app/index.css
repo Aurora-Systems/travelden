@@ -1,0 +1,34 @@
+
+:root{
+    --primary:#012139;
+    --secondary:#ff440e;
+    --tertiary:#b5d4e5;
+}
+
+
+.primary{
+    background-color: var(--primary);
+}
+
+.tp{
+    color: var(--primary)
+}
+
+.secondary{
+    background-color: var(--secondary);
+}
+
+.ts{
+    color: var(--secondary)
+}
+
+.solid-btn{
+    border-color: white;
+    color: white;
+}
+
+.solid-btn:hover{
+    background-color: white;
+    color: var(--primary);
+}
+

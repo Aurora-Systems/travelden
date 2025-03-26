@@ -1,0 +1,1 @@
+export const white_btn:string = "btn rounded-pill solid-btn"
