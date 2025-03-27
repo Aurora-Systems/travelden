@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import type { Metadata } from "next";
 import {  Urbanist } from "next/font/google";
-import {Bar} from './components/navbar';
+import {Bar, Footer} from './components/navbar';
 import "./index.css"
 
 const urbanist = Urbanist({
@@ -22,8 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${urbanist.className} `}>
-        {<Bar/>}
+        <Bar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

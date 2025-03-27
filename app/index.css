@@ -32,3 +32,27 @@
     color: var(--primary);
 }
 
+.p-btn{
+    border: 1px solid var(--primary);
+    min-width:100px;
+}
+
+.p-btn:hover{
+    background-color: var(--primary);
+    color:white
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+  }
+  
+.team_card{
+    transition: transform 0.4s ease;
+}
+
+.team_card:hover{
+   transform: scale(1.03);
+}
