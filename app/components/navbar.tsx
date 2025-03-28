@@ -36,12 +36,12 @@ export const Bar = () => {
                     >
                          {isDrawerOpen ?'✕':''}
                     </div>
-                    <Link href="/" className="nav-link">Home</Link> 
-                    <Link href="/tours" className="nav-link">Tours</Link> 
-                    <Link href="/book" className="nav-link">Book A Trip</Link> 
-                    <Link href="/blog" className="nav-link">Blog</Link>
-                    <Link href="/contact" className="nav-link">Contact</Link> 
-                    <button className="explore-btn mobile-explore-btn">Start Exploring</button>
+                    <Link href="/" className="nav-link" onClick={()=>setIsDrawerOpen(false)}>Home</Link> 
+                    <Link href="/tours" className="nav-link"  onClick={()=>setIsDrawerOpen(false)}>Tours</Link> 
+                    <Link href="/book" className="nav-link"  onClick={()=>setIsDrawerOpen(false)}>Book A Trip</Link> 
+                    <Link href="/blog" className="nav-link"  onClick={()=>setIsDrawerOpen(false)}>Blog</Link>
+                    <Link href="/contact" className="nav-link"  onClick={()=>setIsDrawerOpen(false)}>Contact</Link> 
+                    <button className="explore-btn mobile-explore-btn"  onClick={()=>setIsDrawerOpen(false)}>Start Exploring</button>
                 </div>
   
                 {/* Explore Button for Desktop */}
@@ -87,8 +87,8 @@ export const Footer=()=>{
           <br/>
           <span><Link target="_blank" href="https://www.facebook.com/traveldenzwe/">Facebook</Link></span>
           <span><Link target="_blank" href="https://www.instagram.com/travelden_/">Instagram</Link></span>
-          <span><Link href="/destinations">LinkedIn</Link></span>
-          <span><Link href="contact">X</Link></span>
+          <span><Link href="#">LinkedIn</Link></span>
+          <span><Link href="#">X</Link></span>
         </div>
         <div className="col-sm text-center">
           <Image width={170} height={170} src={"https://ngratesc.sirv.com/Travel%20Den/logo.png"} alt=""/>
