@@ -12,7 +12,7 @@ export const Bar = () => {
     };
 
     return (
-        <nav className="navbar container-fluid">
+        <nav className="navbar container-fluid  sticky-top">
             <div className="navbar-container container-fluid">
                 {/* Brand Column */}
                 <div className="navbar-brand d-flex align-items-center">

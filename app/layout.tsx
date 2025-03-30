@@ -22,9 +22,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${urbanist.className} `}>
-        <Bar/>
+
+      <div className='wrapper'>
+      <Bar/>
+
+
+
         {children}
+    
         <Footer/>
+        <br/>
+    <br/><br/>
+    <div style={{height:"10vh"}}>
+
+    </div>
+        </div>
+
       </body>
     </html>
   );

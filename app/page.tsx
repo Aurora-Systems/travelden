@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <div >
       <main>
-        <div className="min-vh-100 primary d-flex align-items-center justify-content-center">
-          <div className="row container d-flex align-items-center">
-
-            <div className="col-sm text-md-start text-center">
+        <div style={{...BgImg("https://ngratesc.sirv.com/Travel%20Den/header.jpg"),backgroundAttachment:"fixed"}} className="vh-100 primary d-flex align-items-center justify-content-center">
+          <div className=" container d-flex align-items-center justify-content-center">
+            
+            <div className="text-center header rounded p-5 border_grad s_border">
               <Fade cascade={true}>
-                <h1 className="display-1 text-white fw-bold">Travel Den</h1>
+                <h1 className="display-1 text-white  fw-bold">Travel Den</h1>
                 <h3 className=" ts">Explore • Dream • Discover</h3>
                 <p className="text-white">
                   Your Trusted Travel Partner
@@ -21,11 +21,7 @@ export default function Home() {
                 <button className={`${white_btn}`}>Book Your Trip</button>
                 </Fade>
             </div>
-            <div className="col-sm">
-              <Fade>
-                <Image src="https://ngratesc.sirv.com/Travel%20Den/1.png" className="img-fluid" width="700" height="500" alt="Picture of Zanzibar"/>
-              </Fade>
-            </div>
+          
           </div>
 
         </div>
@@ -60,7 +56,7 @@ export default function Home() {
             </div>
             </Fade>
         </div>
-        <div className="min-vh-100 secondary d-flex align-items-center justify-content-center">
+        <div className="min-vh-100 secondary d-flex align-items-center justify-content-center" style={{backgroundAttachment:"fixed"}}>
           <div className="row container d-flex align-items-center">
 
             <div className="col-sm text-md-start text-center order-md-2 pt-5">
@@ -77,6 +73,18 @@ export default function Home() {
                 <Image src="https://ngratesc.sirv.com/Travel%20Den/2.png" className="img-fluid" width="700" height="500" alt="Picture of Zanzibar"/>
               </Fade>
             </div>
+          </div>
+
+        </div>
+        <div className="text-center secondary vh-100 d-flex flex-column align-items-center justify-content-center" style={{...BgImg("https://ngratesc.sirv.com/Travel%20Den/pexels-keeganjchecks-9730025.jpg"), backgroundAttachment:"fixed"}}>
+          <div className="p-5 rounded header">
+          <Fade cascade={true}>
+            <h1 className="display-1 ts fw-bold text-white">
+              Visit Zanzibar
+            </h1>
+            <p className="text-white ts">Where Turquoise Waters Meet Timeless Beauty</p>
+            <Link target="_blank" href="https://wa.me/263776743323?text=Hi, can i get more information about booking a trip to Zanzibar"> <button className={white_btn}>Get Started</button></Link>
+          </Fade>
           </div>
 
         </div>
@@ -102,6 +110,18 @@ export default function Home() {
             </div>
         </div>
         </Fade>
+        <div className="text-center secondary vh-100 d-flex flex-column align-items-center justify-content-center" style={{...BgImg("https://ngratesc.sirv.com/Travel%20Den/pexels-nextvoyage-1467300.jpg"), backgroundAttachment:"fixed"}}>
+          <div className="p-5 rounded header">
+          <Fade cascade={true}>
+            <h1 className="display-1 ts fw-bold text-white">
+              Visit Dubai
+            </h1>
+            <p className="text-white ts">A Journey Into Luxury, Adventure, and Endless Wonders</p>
+            <Link target="_blank" href="https://wa.me/263776743323?text=Hi, can i get more information about booking a trip to Dubai"><button className={white_btn}>Get Started</button></Link>
+          </Fade>
+          </div>
+
+        </div>
         <div className="min-vh-100 primary text-white d-flex align-items-center justify-content-center">
          
           <div className="pt-5 pb-5">
@@ -176,6 +196,18 @@ export default function Home() {
             </div>
             </Fade>
             </div>
+        </div>
+        <div className="text-center secondary vh-100 d-flex flex-column align-items-center justify-content-center" style={{...BgImg("https://ngratesc.sirv.com/Travel%20Den/pexels-niklas-eichler-2137446-3770287.jpg"), backgroundAttachment:"fixed"}}>
+          <div className="p-5 rounded header">
+          <Fade cascade={true}>
+            <h1 className="display-1 ts fw-bold text-white">
+              Visit Cape Town
+            </h1>
+            <p className="text-white ts">Where Breathtaking Beauty Meets Unforgettable Adventure!</p>
+           <Link target="_blank" href="https://wa.me/263776743323?text=Hi, can i get more information about booking a trip to Cape Town"><button className={white_btn}>Get Started</button></Link> 
+          </Fade>
+          </div>
+
         </div>
       </main>
     </div>
