@@ -70,7 +70,7 @@ export default function Home() {
             </div>
             <div className="col-sm order-md-1">
               <Fade>
-                <Image src="https://ngratesc.sirv.com/Travel%20Den/2.png" className="img-fluid" width="700" height="500" alt="Picture of Zanzibar"/>
+                <Image src="https://ngratesc.sirv.com/Travel%20Den/edr.png" className="img-fluid" width="700" height="500" alt="Picture of Zanzibar"/>
               </Fade>
             </div>
           </div>
