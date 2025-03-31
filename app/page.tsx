@@ -18,7 +18,7 @@ export default function Home() {
                 <p className="text-white">
                   Your Trusted Travel Partner
                 </p>
-                <button className={`${white_btn}`}>Book Your Trip</button>
+                <Link href="/book"><button className={`${white_btn}`}>Book Your Trip</button></Link>
                 </Fade>
             </div>
           
@@ -38,11 +38,11 @@ export default function Home() {
                   <p><span className="fw-bold ts">Explore</span> new destinations and embrace the beauty of the unknown.</p>
               </div>
               <div className="col-sm">
-              <Image src="https://ngratesc.sirv.com/Travel%20Den/5.png" width={"300"} height={"300"} alt="zanibar"/>
+              <Image src="https://ngratesc.sirv.com/Travel%20Den/balli.png" width={"300"} height={"300"} alt="zanibar"/>
               <p><span className="fw-bold ts">Discover</span> unforgettable experiences that leave lasting memories.</p>
               </div>
               <div className="col-sm">
- <Image src="https://ngratesc.sirv.com/Travel%20Den/3.png" width={"300"} height={"300"} alt="zanibar"/>
+ <Image src="https://ngratesc.sirv.com/Travel%20Den/ship.png" width={"300"} height={"300"} alt="zanibar"/>
                   <p><span className="fw-bold ts">Dream</span> beyond borders and turn your travel fantasies into reality.</p>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Home() {
                 <h1 className="display-1 text-white fw-bold">About<br/><span className="tp">Travel Den</span></h1>
                 <p className="text-white">We are committed to providing exceptional travel experiences tailored to your needs. Whether you&apos;re planning an adventurous getaway, a corporate trip, or a relaxing holiday, we ensure a seamless journey from start to finish.
                 </p>
-                <button className={`${white_btn}`}>Book Your Trip</button>
+                <Link href="/book"><button className={`${white_btn}`}>Book Your Trip</button></Link>
                 </Fade>
             </div>
             <div className="col-sm order-md-1">

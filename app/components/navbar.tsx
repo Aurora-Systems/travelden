@@ -63,7 +63,7 @@ export const Footer=()=>{
     <div className="container-fluid d-flex justify-content-center " >
     <div className="row container mt-2">
         <div className="col-sm d-flex flex-column">
-          <span className="fw-bold tp">Contact Details</span>
+          <span className="fw-bold tp">Zimbabwean Offices</span>
           <br/>
           <span><i className="bi bi-geo-alt ts"></i> Block 2, 106  Longchen Plaza, Harare Zimbabwe</span>
           <span><i className="bi bi-envelope-at ts"></i> info@travelden.co.zw</span>
@@ -71,6 +71,14 @@ export const Footer=()=>{
           <span><i className="bi bi-telephone ts"></i> +263 77 674 3323</span>
 
 
+        </div>
+        <div className="col-sm d-flex flex-column">
+        <span className="fw-bold tp">Zambian Offices</span>
+          <br/>
+          <span><i className="bi bi-geo-alt ts"></i>Shop 3. Next To Ibex Hub, Lusaka          </span>
+          <span><i className="bi bi-envelope-at ts"></i> info@travelden.co.zw</span>
+          <span><i className="bi bi-telephone ts"></i> +260 972 012 940</span>
+          <span><i className="bi bi-telephone ts"></i> +260 772 506 912</span>
         </div>
         <div className="col-sm d-flex flex-column">
           <span className="fw-bold tp">Pages</span>
