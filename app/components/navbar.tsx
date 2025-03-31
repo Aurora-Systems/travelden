@@ -65,7 +65,7 @@ export const Footer=()=>{
         <div className="col-sm d-flex flex-column">
           <span className="fw-bold tp">Zimbabwean Offices</span>
           <br/>
-          <span><i className="bi bi-geo-alt ts"></i> Block 2, 106  Longchen Plaza, Harare Zimbabwe</span>
+          <span><i className="bi bi-geo-alt ts"></i> Block 2, 106  Longchen Plaza, Harare </span>
           <span><i className="bi bi-envelope-at ts"></i> info@travelden.co.zw</span>
           <span><i className="bi bi-telephone ts"></i> +263 71 974 3323</span>
           <span><i className="bi bi-telephone ts"></i> +263 77 674 3323</span>
