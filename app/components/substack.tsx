@@ -7,7 +7,7 @@ const SubstackFeed = () => {
   useEffect(() => {
     window.SubstackFeedWidget = {
       substackUrl: "travelden.substack.com",
-      layout: "left",
+      layout: "right",
       posts: 3,
       colors: {
         primary: "#012139",
