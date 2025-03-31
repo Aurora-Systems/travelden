@@ -13,8 +13,8 @@ export default function Book(){
     const send_application = (e: FormEvent) => {
         e.preventDefault()
         set_loading(true)
-        emailjs.sendForm("service_xwf6fms", "template_c4pjfnx", form.current, {
-            publicKey: "CLt7ZGjfiSQEopImB"
+        emailjs.sendForm("service_5zjo8md", "template_7l03yhh", form.current, {
+            publicKey: "4NKMqim6Cf018UdWQ"
         }).then(() => {
             alert("✅ We received your enquiry, expect a call or an email soon!")
             form.current.reset()

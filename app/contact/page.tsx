@@ -10,8 +10,8 @@ export default function Contact(){
         const send_application = (e: FormEvent) => {
             e.preventDefault()
             set_loading(true)
-            emailjs.sendForm("service_xwf6fms", "template_c4pjfnx", form.current, {
-                publicKey: "CLt7ZGjfiSQEopImB"
+            emailjs.sendForm("service_5zjo8md", "template_4n256g7", form.current, {
+                publicKey: "4NKMqim6Cf018UdWQ"
             }).then(() => {
                 alert("✅ We received your enquiry, expect a call or an email soon!")
                 form.current.reset()
