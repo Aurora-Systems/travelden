@@ -38,22 +38,22 @@ export default function Contact(){
                     <form onSubmit={send_application} ref={form}>
                         <div className="mb-2">
                             <span>Name</span>
-                            <input type="text" name="full_name" className="form-control"/>
+                            <input type="text" name="full_name" className="form-control"  required/>
                         </div>
                         <div className="mb-2">
                             <span>Contact Number</span>
-                            <input type="text" name="contact_number" className="form-control"/>
+                            <input type="text" name="contact_number" className="form-control"  required/>
                         </div>
                         <div className="mb-2">
                             <span>Email</span>
-                            <input type="text" name="email" className="form-control"/>
+                            <input type="text" name="email" className="form-control"  required/>
                         </div>
                         <div className="mb-2">
                             <span>Message</span>
-                            <textarea name="message" className="form-control" />
+                            <textarea name="message" className="form-control"  required/>
                         </div>
                         <div className="mb-2">
-                            <button className="btn rounded-pill p-btn" type="submit">{loading?"Sending":"Send"}</button>
+                            <button className="btn rounded-pill p-btn" type="submit" disabled={loading}>{loading?"Sending":"Send"}</button>
                         </div>
                     </form>
                 </div>

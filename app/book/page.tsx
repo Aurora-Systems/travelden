@@ -39,21 +39,21 @@ export default function Book(){
                         <div className="row">
                             <div className="col-sm mb-2"> 
                                 <span>Full Name</span>
-                                <input type="text" name="full_name" className="form-control" />
+                                <input type="text" name="full_name" className="form-control" required/>
                             </div>
                             <div className="col-sm mb-2"> 
                                 <span>Email</span>
-                                <input type="text" name="email" className="form-control" />
+                                <input type="text" name="email" className="form-control"  required/>
                             </div>
                             <div className="col-sm mb-2"> 
                                 <span>Contact Number</span>
-                                <input type="text" name="contact_number" className="form-control" />
+                                <input type="text" name="contact_number" className="form-control"  required/>
                             </div>
                         </div>
                         <div className="row">
                         <div className="col-sm mb-2"> 
                                 <span>For Business</span>
-                                <select className="form-control" name="for_business">
+                                <select className="form-control" name="for_business"  required>
                                     <option></option>
                                     <option value="Yes">Yes</option>
                                     <option value="No">No</option>
@@ -62,35 +62,35 @@ export default function Book(){
                             </div>
                             <div className="col-sm mb-2"> 
                                 <span>Number of Adults</span>
-                                <input type="number" name="number_of_adults" className="form-control" />
+                                <input type="number" name="number_of_adults" className="form-control"  required />
                             </div>
                             <div className="col-sm mb-2"> 
                                 <span>Number of Kids</span>
-                                <input type="number" name="number_of_kids" className="form-control" />
+                                <input type="number" name="number_of_kids" className="form-control"  required />
                             </div>
                         </div>
                         <div className="row">
                         <div className="col-sm mb-2"> 
                                 <span>Duration - From</span>
-                                <input type="number" name="start_date" className="form-control" />
+                                <input type="date" name="start_date" className="form-control"  required />
 
                             </div>
                             <div className="col-sm mb-2"> 
                                 <span>Duration - To</span>
-                                <input type="number" name="end_date" className="form-control" />
+                                <input type="date" name="end_date" className="form-control"  required />
                             </div>
                             <div className="col-sm mb-2"> 
                                 <span>Budget</span>
-                                <input type="number" name="budget" className="form-control" />
+                                <input type="number" name="budget" className="form-control"  required />
                             </div>
                         </div>
                         <div className="mb-2">
                             <span>Additional Information</span>
-                            <textarea className="form-control" name="additional_information"/>
+                            <textarea className="form-control" name="additional_information"  required/>
                         </div>
                         <div className="mb-2">
                             <span>Where Are you located</span>
-                            <select className="form-control">
+                            <select className="form-control" name="location"  required>
                                 <option value="Zimbabwe">Zimbabwe</option>
                                 <option value="Zambia">Zambia</option>
                                 <option value="Other country">Other Country</option>
