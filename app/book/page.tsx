@@ -91,6 +91,7 @@ export default function Book(){
                         <div className="mb-2">
                             <span>Where Are you located</span>
                             <select className="form-control" name="location"  required>
+                                <option></option>
                                 <option value="Zimbabwe">Zimbabwe</option>
                                 <option value="Zambia">Zambia</option>
                                 <option value="Other country">Other Country</option>
