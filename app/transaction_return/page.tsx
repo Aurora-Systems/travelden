@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Spinner } from "react-bootstrap";
@@ -25,6 +25,7 @@ export default function TransactionReturn() {
             set_error(true);
         }
     }catch(err){
+        console.log(err)
         set_error(true);
     }
     }

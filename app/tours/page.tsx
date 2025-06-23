@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { Fade } from "react-awesome-reveal";
 import { primary_btn } from "../components/reusable_css";
 import { db } from "../api/supabase";
@@ -9,7 +9,8 @@ import {  FormEvent, useEffect, useState } from "react";
 import { Spinner, Modal } from "react-bootstrap";
 import { server } from "../components/server";
 
-export default function tours(){
+export default function Tours(){
+    /* eslint-disable */
     const [tour_data,set_data] = useState<any[]>([]);
     const [selected, set_selected] = useState<any>();
     const [client, set_client] = useState({
@@ -58,6 +59,7 @@ export default function tours(){
         window.location.href = request_checkout.data.payment_url;
 
     }catch(err){
+        console.log(err)
         alert("Something went wrong, please try again later");
     }finally{
         set_loading(false);
