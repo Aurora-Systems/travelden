@@ -1,11 +1,73 @@
+"use client"
 import { Fade } from "react-awesome-reveal";
 import { primary_btn } from "../components/reusable_css";
 import { db } from "../api/supabase";
 import { ShowImage } from "../components/show_img";
-import Link from "next/link";
+import axios from "axios";
 
-export default async function tours(){
-    const {data} = await db.from("items").select("*").eq("user_id","kp_9e709c599d894404b2de694d9d23f7a3")
+import {  FormEvent, useEffect, useState } from "react";
+import { Spinner, Modal } from "react-bootstrap";
+import { server } from "../components/server";
+
+export default function tours(){
+    const [tour_data,set_data] = useState<any[]>([]);
+    const [selected, set_selected] = useState<any>();
+    const [client, set_client] = useState({
+        first_name: "",
+        last_name: "",
+        email: "",
+        phone: ""
+    });
+    const [show_checkout, set_show_checkout] = useState(false);
+    const [loading,set_loading] = useState(false);
+    const fetch_data = async () => {
+        const { data, error } = await db.from("items").select("*").eq("user_id","kp_9e709c599d894404b2de694d9d23f7a3");
+        if(!error) {
+ set_data(data);
+      
+    }
+}
+
+    const checkout=async(e:FormEvent)=>{
+        e.preventDefault();
+        set_loading(true)
+        try{
+
+       
+        const request_checkout = await axios.post(`${server}/transactions/initiate`,{
+            org_id:"kp_9e709c599d894404b2de694d9d23f7a3",
+            cart:[
+                {
+                    item_id:selected?.id,
+                    quantity:1,
+                    unit_charge:selected?.price,
+                }
+            ],
+            currency:"usd",
+            description: selected?.description,
+            client:{
+                ...client
+            }
+        })
+
+        if(request_checkout.status !== 200){
+            alert("Something went wrong, please try again later");
+        }
+        
+        localStorage.setItem("reference_number", request_checkout.data.reference_number);
+        window.location.href = request_checkout.data.payment_url;
+
+    }catch(err){
+        alert("Something went wrong, please try again later");
+    }finally{
+        set_loading(false);
+    }
+
+    }
+
+    useEffect(() => {
+        fetch_data();
+    },[])
     return(
         <div>
             <div className="min-vh-100 pt-5 pb-5">
@@ -23,7 +85,8 @@ export default async function tours(){
                     <div className="row  gap-3 justify-content-center">
 
                         {
-                            data?.map((x,i)=>{
+                            tour_data?.map((x,i)=>{
+                                
                                 return(
                                     <div className="col-md-3 col-sm rounded shadow p-3" key={i}>
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -39,7 +102,11 @@ export default async function tours(){
                                          </p>
                                      </div>
                                      <div>
-                                        <Link target="_blank" href={`https://wa.me/+263719743323?text=Can I get more information about visiting ${x.item_name} for $${x.price}`}><button className={`${primary_btn} w-100`}>Get More Information</button></Link> 
+                                        <button className={`${primary_btn} w-100`} onClick={()=>{
+                                           set_selected(x)
+                                           set_show_checkout(true);
+
+                                        }}>Get More Information</button>
                                      </div>
                                  </div>
                                 )
@@ -52,6 +119,51 @@ export default async function tours(){
                 </div>
                 </Fade>
             </div>
+            <Modal show={show_checkout}>
+                    <Modal.Header>
+                        <h5>Visit {selected?.item_name}</h5>
+                        <button type="button" onClick={()=>set_show_checkout(false)} className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div className="row">
+                            <div className="col-sm">
+ <img src={ShowImage(selected?.image_id)} className="rounded mb-2 w-100 img-fluid" style={{height:"50vh", objectFit:"cover"}} alt=""/>
+                                     <br/>
+                                      <div >
+                                         <p>
+                                             {selected?.description}
+                                         </p>
+                                     </div>
+                            </div>
+                            <div className="col-sm">
+                                <form onSubmit={checkout}>
+                                    <div>
+                                        <h2>Fill up the form to continue</h2>
+                                    </div>
+                                    <div className="mb-2">
+                                        <span>First Name</span>
+                                        <input type="text" className="form-control" value={client.first_name}  onChange={(e)=>set_client({...client, first_name:e.target.value})} required/>
+                                    </div>
+                                    <div className="mb-2">
+                                        <span>Last Name</span>
+                                        <input type="text" className="form-control" value={client.last_name}  onChange={(e)=>set_client({...client, last_name:e.target.value})} required/>
+                                    </div>
+                                    <div className="mb-2">
+                                        <span>Email</span>
+                                        <input type="text" className="form-control" value={client.email}  onChange={(e)=>set_client({...client, email:e.target.value})} required />
+                                    </div>
+                                    <div className="mb-2">
+                                        <span>Phone Number</span>
+                                        <input type="text" className="form-control" value={client.phone}  onChange={(e)=>set_client({...client, phone:e.target.value})} required/>
+
+                                    </div>
+                                    <button type="submit" className={`${primary_btn} w-100`}>{loading?<Spinner size="sm"/>:`Checkout ${(selected?.price as number)?.toFixed(2)}`}</button>
+                                </form>
+                            </div>
+                        </div>
+                    
+                    </Modal.Body>
+            </Modal>
         </div>
     )
 }
