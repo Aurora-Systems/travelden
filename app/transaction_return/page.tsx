@@ -1,4 +1,6 @@
 'use client'
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-expressions */
+
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Spinner } from "react-bootstrap";
