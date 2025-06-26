@@ -23,7 +23,7 @@ export default function Tours(){
     const [show_checkout, set_show_checkout] = useState(false);
     const [loading,set_loading] = useState(false);
     const fetch_data = async () => {
-        const { data, error } = await db.from("items").select("*").eq("user_id","kp_9e709c599d894404b2de694d9d23f7a3");
+        const { data, error } = await db.from("items").select("*").eq("user_id","kp_54a3d9c0f80c4eaca0dea87085f7f224");
         if(!error) {
  set_data(data);
       
@@ -37,7 +37,7 @@ export default function Tours(){
 
        
         const request_checkout = await axios.post(`${server}/transactions/initiate`,{
-            org_id:"kp_9e709c599d894404b2de694d9d23f7a3",
+            org_id:"kp_54a3d9c0f80c4eaca0dea87085f7f224",
             cart:[
                 {
                     item_id:selected?.id,
