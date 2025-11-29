@@ -16,7 +16,7 @@ export const Bar = () => {
             <div className="navbar-container container-fluid">
                 {/* Brand Column */}
                 <div className="navbar-brand d-flex align-items-center">
-                    <Image src="https://clipond.com/Travel%20Den/fav.png" width="90" height="50" alt="logo"/>
+                    <Image src="https://cdn.clipond.com/Travel%20Den/fav.png" width="90" height="50" alt="logo"/>
                     <h1 className="mt-1">Travel Den</h1>
                 </div>
   
@@ -99,7 +99,7 @@ export const Footer=()=>{
           <span><Link href="#">X</Link></span>
         </div>
         <div className="col-sm text-center">
-          <Image width={170} height={170} src={"https://ngratesc.sirv.com/Travel%20Den/logo.png"} alt=""/>
+          <Image width={170} height={170} src={"https://cdn.clipond.com/Travel%20Den/logo.png"} alt=""/>
         </div>
     </div>
     </div>
