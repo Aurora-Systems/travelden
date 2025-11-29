@@ -30,7 +30,7 @@ export default function Book(){
                 <Fade cascade={true} direction="down" >
                 <h1 className="display-1 fw-bold text-center text-white">Book Your Next Trip With Us</h1>
                 <div className="text-center">
-                <Image src="https://ngratesc.sirv.com/Travel%20Den/Johns%20Birthday%20Trip%202025%20(2).png" className="img-fluid" width={"450"} height={"300"} alt="header image"/>
+                <Image src="https://cdn.clipond.com/Travel%20Den/Johns%20Birthday%20Trip%202025%20(2).png" className="img-fluid" width={"450"} height={"300"} alt="header image"/>
 
                 </div>
                 <p className="text-center text-white fw-bold">Fill up the form and we will find and plan the best trip for you</p>
