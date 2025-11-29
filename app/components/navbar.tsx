@@ -16,7 +16,7 @@ export const Bar = () => {
             <div className="navbar-container container-fluid">
                 {/* Brand Column */}
                 <div className="navbar-brand d-flex align-items-center">
-                    <Image src="https://ngratesc.sirv.com/Travel%20Den/fav.png" width="90" height="50" alt="logo"/>
+                    <Image src="https://clipond.com/Travel%20Den/fav.png" width="90" height="50" alt="logo"/>
                     <h1 className="mt-1">Travel Den</h1>
                 </div>
   
