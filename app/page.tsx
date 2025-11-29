@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div >
       <main>
-        <div style={{...BgImg("https://ngratesc.sirv.com/Travel%20Den/header.jpg"),backgroundAttachment:"fixed"}} className="vh-100 primary d-flex align-items-center justify-content-center">
+        <div style={{...BgImg("https://cdn.clipond.com/Travel%20Den/header.jpg"),backgroundAttachment:"fixed"}} className="vh-100 primary d-flex align-items-center justify-content-center">
           <div className=" container d-flex align-items-center justify-content-center">
             
             <div className="text-center header rounded p-5 border_grad s_border">
@@ -34,15 +34,15 @@ export default function Home() {
               <div className="col-sm">
                   
 
-                  <Image src="https://ngratesc.sirv.com/Travel%20Den/4.png" width={"300"} height={"300"} alt="zanibar"/>
+                  <Image src="https://cdn.clipond.com/Travel%20Den/4.png" width={"300"} height={"300"} alt="zanibar"/>
                   <p><span className="fw-bold ts">Explore</span> new destinations and embrace the beauty of the unknown.</p>
               </div>
               <div className="col-sm">
-              <Image src="https://ngratesc.sirv.com/Travel%20Den/balli.png" width={"300"} height={"300"} alt="zanibar"/>
+              <Image src="https://cdn.clipond.com/Travel%20Den/balli.png" width={"300"} height={"300"} alt="zanibar"/>
               <p><span className="fw-bold ts">Discover</span> unforgettable experiences that leave lasting memories.</p>
               </div>
               <div className="col-sm">
- <Image src="https://ngratesc.sirv.com/Travel%20Den/ship.png" width={"300"} height={"300"} alt="zanibar"/>
+ <Image src="https://cdn.clipond.com/Travel%20Den/ship.png" width={"300"} height={"300"} alt="zanibar"/>
                   <p><span className="fw-bold ts">Dream</span> beyond borders and turn your travel fantasies into reality.</p>
               </div>
             </div>
@@ -70,13 +70,13 @@ export default function Home() {
             </div>
             <div className="col-sm order-md-1">
               <Fade>
-                <Image src="https://ngratesc.sirv.com/Travel%20Den/edr.png" className="img-fluid" width="700" height="500" alt="Picture of Zanzibar"/>
+                <Image src="https://cdn.clipond.com/Travel%20Den/edr.png" className="img-fluid" width="700" height="500" alt="Picture of Zanzibar"/>
               </Fade>
             </div>
           </div>
 
         </div>
-        <div className="text-center secondary vh-100 d-flex flex-column align-items-center justify-content-center" style={{...BgImg("https://ngratesc.sirv.com/Travel%20Den/pexels-keeganjchecks-9730025.jpg"), backgroundAttachment:"fixed"}}>
+        <div className="text-center secondary vh-100 d-flex flex-column align-items-center justify-content-center" style={{...BgImg("https://cdn.clipond.com/Travel%20Den/pexels-keeganjchecks-9730025.jpg"), backgroundAttachment:"fixed"}}>
           <div className="p-5 rounded header">
           <Fade cascade={true}>
             <h1 className="display-1 ts fw-bold text-white">
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
         </div>
         </Fade>
-        <div className="text-center secondary vh-100 d-flex flex-column align-items-center justify-content-center" style={{...BgImg("https://ngratesc.sirv.com/Travel%20Den/pexels-nextvoyage-1467300.jpg"), backgroundAttachment:"fixed"}}>
+        <div className="text-center secondary vh-100 d-flex flex-column align-items-center justify-content-center" style={{...BgImg("https://cdn.clipond.com/Travel%20Den/pexels-nextvoyage-1467300.jpg"), backgroundAttachment:"fixed"}}>
           <div className="p-5 rounded header">
           <Fade cascade={true}>
             <h1 className="display-1 ts fw-bold text-white">
@@ -133,7 +133,7 @@ export default function Home() {
             <div className="row gap-5">
               <div className="col-sm bg-white  rounded p-0 team_card container">
                   <div className="rounded" style={{
-                    ...BgImg("https://ngratesc.sirv.com/Travel%20Den/opd.jpg"),
+                    ...BgImg("https://cdn.clipond.com/Travel%20Den/opd.jpg"),
                     height:"30vh",
                     width:"100%"
                   }}>
@@ -148,7 +148,7 @@ export default function Home() {
               </div>
               <div className="col-sm border bg-white team_card rounded p-0">
                   <div style={{
-                    ...BgImg("https://ngratesc.sirv.com/Travel%20Den/zoe.jpg"),
+                    ...BgImg("https://cdn.clipond.com/Travel%20Den/zoe.jpg"),
                     height:"30vh",
                     width:"100%"
                   }}>
@@ -163,7 +163,7 @@ export default function Home() {
               </div>
               <div className="col-sm bg-white border team_card rounded p-0">
                   <div style={{
-                    ...BgImg("https://ngratesc.sirv.com/Travel%20Den/gh.jpg"),
+                    ...BgImg("https://cdn.clipond.com/Travel%20Den/gh.jpg"),
                     height:"30vh",
                     width:"100%"
                   }}>
@@ -178,7 +178,7 @@ export default function Home() {
               </div>
               <div className="col-sm border bg-white team_card rounded p-0">
                   <div style={{
-                    ...BgImg("https://ngratesc.sirv.com/Travel%20Den/tin.jpg"),
+                    ...BgImg("https://cdn.clipond.com/Travel%20Den/tin.jpg"),
                     height:"30vh",
                     width:"100%"
                   }}>
@@ -197,7 +197,7 @@ export default function Home() {
             </Fade>
             </div>
         </div>
-        <div className="text-center secondary vh-100 d-flex flex-column align-items-center justify-content-center" style={{...BgImg("https://ngratesc.sirv.com/Travel%20Den/pexels-niklas-eichler-2137446-3770287.jpg"), backgroundAttachment:"fixed"}}>
+        <div className="text-center secondary vh-100 d-flex flex-column align-items-center justify-content-center" style={{...BgImg("https://cdn.clipond.com/Travel%20Den/pexels-niklas-eichler-2137446-3770287.jpg"), backgroundAttachment:"fixed"}}>
           <div className="p-5 rounded header">
           <Fade cascade={true}>
             <h1 className="display-1 ts fw-bold text-white">
