@@ -148,7 +148,7 @@ export default function Home() {
               </div>
               <div className="col-sm border bg-white team_card rounded p-0">
                   <div style={{
-                    ...BgImg("https://cdn.clipond.com/Travel%20Den/zoe.jpg"),
+                    ...BgImg("https://cdn.clipond.com/Travel%20Den/WhatsApp%20Image%202026-02-23%20at%2014.36.51.jpeg"),
                     height:"30vh",
                     width:"100%"
                   }}>
