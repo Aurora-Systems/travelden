@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div >
       <main>
-        <div style={{...BgImg("https://cdn.clipond.com/Travel%20Den/header.jpg"),backgroundAttachment:"fixed"}} className="vh-100 primary d-flex align-items-center justify-content-center">
+        <div style={{...BgImg("https://cdn.clipond.com/Travel%20Den/WhatsApp%20Image%202026-02-23%20at%2014.38.30.jpeg"),backgroundAttachment:"fixed"}} className="vh-100 primary d-flex align-items-center justify-content-center">
           <div className=" container d-flex align-items-center justify-content-center">
             
             <div className="text-center header rounded p-5 border_grad s_border">
