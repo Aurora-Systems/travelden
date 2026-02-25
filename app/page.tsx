@@ -130,7 +130,7 @@ export default function Home() {
               <h1 className="display-1 fw-bold">Meet The <span className="span">A-Team</span></h1>
             </div>
             <div className=" m-5">
-            <div className="row gap-5">
+            <div className="row gap-5 justify-content-center">
               <div className="col-sm-4 bg-white  rounded p-0 team_card container">
                   <div className="rounded" style={{
                     ...BgImg("https://cdn.clipond.com/Travel%20Den/opd.jpg"),
