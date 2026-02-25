@@ -171,7 +171,7 @@ export default function Home() {
                   </div>
                   <div className="p-2">
                   <h3 className="tp">Christine Makanaka Pearl Tom</h3>
-                  <p className="ts">Travel Consultant</p>
+                  <p className="ts">Travel Marketing Specialist</p>
                   <a href="tel:+263783996339"><button className={`${primary_btn} w-100`}>Get In Touch</button></a>
                   </div>
 
@@ -201,7 +201,7 @@ export default function Home() {
                   </div>
                   <div className="p-2">
                   <h3 className="tp">Brenda Dzikiti</h3>
-                  <p className="ts">Travel Consultant</p>
+                  <p className="ts">Customer Service Representative</p>
                   <a href="tel:+263719808160"><button className={`${primary_btn} w-100`}>Get In Touch</button></a>
                   </div>
 
