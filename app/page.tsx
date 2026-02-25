@@ -129,9 +129,9 @@ export default function Home() {
             <div className="container text-center ">
               <h1 className="display-1 fw-bold">Meet The <span className="span">A-Team</span></h1>
             </div>
-            <div className=" m-5">
-            <div className="row gap-5 justify-content-center">
-              <div className="col-sm-4 bg-white  rounded p-0 team_card container">
+            <div className=" m-2">
+            <div className="row gap-3 ">
+              <div className="col-sm bg-white  rounded p-0 team_card container">
                   <div className="rounded" style={{
                     ...BgImg("https://cdn.clipond.com/Travel%20Den/opd.jpg"),
                     height:"30vh",
@@ -146,7 +146,7 @@ export default function Home() {
                   </div>
 
               </div>
-              <div className="col-sm-4 border bg-white team_card rounded p-0">
+              <div className="col-sm border bg-white team_card rounded p-0">
                   <div style={{
                     ...BgImg("https://cdn.clipond.com/Travel%20Den/WhatsApp%20Image%202026-02-23%20at%2014.36.51.jpeg"),
                     height:"30vh",
@@ -161,22 +161,7 @@ export default function Home() {
                   </div>
 
               </div>
-              <div className="col-sm-4 bg-white border team_card rounded p-0">
-                  <div style={{
-                    ...BgImg("https://cdn.clipond.com/Travel%20Den/gh.jpg"),
-                    height:"30vh",
-                    width:"100%"
-                  }}>
-
-                  </div>
-                  <div className="p-2">
-                  <h3 className="tp">Christine Makanaka Pearl Tom</h3>
-                  <p className="ts">Travel Marketing Specialist</p>
-                  <a href="tel:+263783996339"><button className={`${primary_btn} w-100`}>Get In Touch</button></a>
-                  </div>
-
-              </div>
-              <div className="col-sm-4 border bg-white team_card rounded p-0">
+              <div className="col-sm border bg-white team_card rounded p-0">
                   <div style={{
                     ...BgImg("https://cdn.clipond.com/Travel%20Den/WhatsApp%20Image%202026-02-23%20at%2014.36.44.jpeg"),
                     height:"30vh",
@@ -191,11 +176,33 @@ export default function Home() {
                   </div>
 
               </div>
+             
+           
+            </div>
+            <div className="row gap-3 mt-2">
+              
+            <div className="col-sm  bg-white border team_card rounded p-0">
+                  <div style={{
+                    ...BgImg("https://cdn.clipond.com/Travel%20Den/gh.jpg"),
+                    height:"30vh",
+                    width:"100%"
+                  }}>
+
+                  </div>
+                  <div className="p-2">
+                  <h3 className="tp">Christine Makanaka Pearl Tom</h3>
+                  <p className="ts">Travel Marketing Specialist</p>
+                  <a href="tel:+263783996339"><button className={`${primary_btn} w-100`}>Get In Touch</button></a>
+                  </div>
+
+              </div>
+             
               <div className="col-sm border bg-white team_card rounded p-0">
                   <div style={{
                     ...BgImg("https://cdn.clipond.com/Travel%20Den/WhatsApp%20Image%202026-02-23%20at%2014.42.04.jpeg"),
                     height:"30vh",
-                    width:"100%"
+                    width:"100%",
+                    backgroundPosition:"center"
                   }}>
 
                   </div>
@@ -206,7 +213,9 @@ export default function Home() {
                   </div>
 
               </div>
-           
+
+              <div className="col-sm border  team_card border-0 rounded p-0"></div>
+
             </div>
             </div>
             </Fade>
