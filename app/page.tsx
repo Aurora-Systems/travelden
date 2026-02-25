@@ -131,7 +131,7 @@ export default function Home() {
             </div>
             <div className=" m-5">
             <div className="row gap-5">
-              <div className="col-sm bg-white  rounded p-0 team_card container">
+              <div className="col-sm-4 bg-white  rounded p-0 team_card container">
                   <div className="rounded" style={{
                     ...BgImg("https://cdn.clipond.com/Travel%20Den/opd.jpg"),
                     height:"30vh",
@@ -146,7 +146,7 @@ export default function Home() {
                   </div>
 
               </div>
-              <div className="col-sm border bg-white team_card rounded p-0">
+              <div className="col-sm-4 border bg-white team_card rounded p-0">
                   <div style={{
                     ...BgImg("https://cdn.clipond.com/Travel%20Den/WhatsApp%20Image%202026-02-23%20at%2014.36.51.jpeg"),
                     height:"30vh",
@@ -161,7 +161,7 @@ export default function Home() {
                   </div>
 
               </div>
-              <div className="col-sm bg-white border team_card rounded p-0">
+              <div className="col-sm-4 bg-white border team_card rounded p-0">
                   <div style={{
                     ...BgImg("https://cdn.clipond.com/Travel%20Den/gh.jpg"),
                     height:"30vh",
@@ -176,7 +176,7 @@ export default function Home() {
                   </div>
 
               </div>
-              <div className="col-sm border bg-white team_card rounded p-0">
+              <div className="col-sm-4 border bg-white team_card rounded p-0">
                   <div style={{
                     ...BgImg("https://cdn.clipond.com/Travel%20Den/WhatsApp%20Image%202026-02-23%20at%2014.36.44.jpeg"),
                     height:"30vh",
