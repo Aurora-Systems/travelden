@@ -191,6 +191,21 @@ export default function Home() {
                   </div>
 
               </div>
+              <div className="col-sm border bg-white team_card rounded p-0">
+                  <div style={{
+                    ...BgImg("https://cdn.clipond.com/Travel%20Den/WhatsApp%20Image%202026-02-23%20at%2014.42.04.jpeg"),
+                    height:"30vh",
+                    width:"100%"
+                  }}>
+
+                  </div>
+                  <div className="p-2">
+                  <h3 className="tp">Brenda Dzikiti</h3>
+                  <p className="ts">Travel Consultant</p>
+                  <a href="tel:+263719808160"><button className={`${primary_btn} w-100`}>Get In Touch</button></a>
+                  </div>
+
+              </div>
            
             </div>
             </div>
